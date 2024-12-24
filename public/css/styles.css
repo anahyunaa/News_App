@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Sen', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ebdee7;
+  color: #53413d;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #53413d;
+  border-bottom: 2px solid #cab6c2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ebdee7;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-item {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link:hover {
+  color: #cab6c2;
+  transform: scale(1.05);
+}
+
+/* Card */
+.card {
+  background-color: #cab6c2;
+  border: 1px solid #b6a2ad;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-title {
+  color: #53413d;
+  font-size: 1.25rem;
+}
+
+.card-text {
+  color: #897777;
+}
+
+.card .btn {
+  background-color: #53413d;
+  color: #ebdee7;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #897777;
+  color: #ebdee7;
+}
+
+/* Footer */
+footer {
+  background-color: #53413d;
+  color: #ebdee7;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Alert */
+.alert {
+  background-color: #b6a2ad;
+  color: #53413d;
+  border: 1px solid #897777;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Button */
+.btn-primary {
+  background-color: #53413d;
+  border-color: #897777;
+  color: #ebdee7;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #897777;
+  border-color: #cab6c2;
+}
+
+/* Link */
+a {
+  color: #897777;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #cab6c2;
+}
+
+/* Profile Image */
+img.rounded-circle {
+  border: 2px solid #897777;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* Additional Improvements */
+.card:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover .btn {
+  background-color: #cab6c2;
+  color: #53413d;
+}
+
+.navbar a {
+  transition: transform 0.2s ease;
+}
+
+.navbar a:hover {
+  transform: scale(1.05);
+}
